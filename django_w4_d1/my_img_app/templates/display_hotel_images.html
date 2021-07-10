@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+
+        height:200px;
+        width:200px;
+
+        }
+        p{
+        display:inline;
+        float:left;
+        margin:5px;
+        }
+
+    </style>
+</head>
+<body>
+{% for hotel in hotel_images %}
+    <div>
+        <p align="center">{{ hotel.name }}<br>
+        <img src="{{ hotel.hotel_Main_Img.url }}" /></p>
+    </div>
+{% endfor %}
+</body>
+</html>
